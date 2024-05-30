@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733133380454",
+    "project_id": "contravention-routiere",
+    "storage_bucket": "contravention-routiere.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733133380454:android:fa80a041b04be28cd846a7",
+        "android_client_info": {
+          "package_name": "com.example.app_contravention"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm7KP28PkUeRGAIH31IlYuTdWJlNvwk1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

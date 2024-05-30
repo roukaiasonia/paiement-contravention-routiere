@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.7.10' // Mettez à jour la version
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0' // Conservez la version actuelle du plugin Gradle
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Utilisez la variable définie
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

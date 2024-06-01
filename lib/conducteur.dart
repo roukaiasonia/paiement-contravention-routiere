@@ -1,4 +1,4 @@
-import 'package:app_contravention/main.dart';
+import 'package:app_contravention/login.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -55,7 +55,7 @@ class ConducteurDetail extends StatelessWidget {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>  const MyApp(),
+                              builder: (context) =>  const LoginPage(),
                             ),
                           );
                         },

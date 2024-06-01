@@ -8,7 +8,7 @@ import 'package:app_contravention/recours.dart';
 class ConducteurDetail extends StatelessWidget {
   final String conducteurId;
 
-  const ConducteurDetail({super.key, required this.conducteurId});
+  const ConducteurDetail({Key? key, required this.conducteurId}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

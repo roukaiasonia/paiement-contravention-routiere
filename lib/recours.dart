@@ -41,7 +41,7 @@ class RecoursPage extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    subtitle: Text("$numeroContravention", style: const TextStyle(
+                    subtitle: Text(numeroContravention, style: const TextStyle(
                       fontSize: 20.0,
                       color: Colors.black,
                     ),),
